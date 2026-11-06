@@ -1,0 +1,38 @@
+{
+  "slug": "05b-smpl",
+  "category": 5,
+  "title": "补充：SMPL 人体网格",
+  "split": "hard",
+  "sample_id": "smpl-trailer-combo__knight",
+  "upstream": "拟合 SMPL 运动，白底渲染；具体原视频由该条元数据未注明",
+  "upstream_url": null,
+  "dataset": "https://huggingface.co/datasets/Enderfga/SolarRenderer-Data",
+  "condition": "SMPL body mesh",
+  "primary": false,
+  "real_target": false,
+  "urls": {
+    "condition.mp4": "https://huggingface.co/datasets/Enderfga/SolarRenderer-Data/resolve/main/benchmark/hard/smpl-trailer-combo__knight/condition.mp4",
+    "first_frame.png": "https://huggingface.co/datasets/Enderfga/SolarRenderer-Data/resolve/main/benchmark/hard/smpl-trailer-combo__knight/first_frame.png",
+    "prompt.txt": "https://huggingface.co/datasets/Enderfga/SolarRenderer-Data/resolve/main/benchmark/hard/smpl-trailer-combo__knight/prompt.txt"
+  },
+  "source_index": "https://huggingface.co/datasets/Enderfga/SolarRenderer-Data/resolve/main/benchmark/hard/cases.jsonl",
+  "original_source_record": {
+    "case_id": "smpl-trailer-combo__knight",
+    "segment": "smpl-trailer-combo",
+    "look": "knight",
+    "condition": "SMPL body mesh",
+    "condition_origin": "fitted SMPL motion, white background",
+    "condition_seen_in_training": true,
+    "tags": [
+      "large motion",
+      "night"
+    ],
+    "files": {
+      "condition.mp4": "benchmark/hard/smpl-trailer-combo__knight/condition.mp4",
+      "first_frame.png": "benchmark/hard/smpl-trailer-combo__knight/first_frame.png",
+      "prompt.txt": "benchmark/hard/smpl-trailer-combo__knight/prompt.txt"
+    },
+    "first_frame_note": "image-model render of the condition's frame 0 in this look, not a real photo",
+    "ground_truth": null
+  }
+}

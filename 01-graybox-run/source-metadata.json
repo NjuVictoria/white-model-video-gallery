@@ -1,0 +1,31 @@
+{
+  "slug": "01-graybox-run",
+  "category": 1,
+  "title": "场景灰模／白盒",
+  "split": "heldout",
+  "sample_id": "magpie/scene09_player4_039250",
+  "upstream": "Magpie / MogoAI/Magpie_lite；SolarRenderer 切片",
+  "upstream_url": "https://huggingface.co/datasets/MogoAI/Magpie_lite",
+  "dataset": "https://huggingface.co/datasets/Enderfga/SolarRenderer-Data",
+  "condition": "scene grey box (engine white-box)",
+  "primary": true,
+  "real_target": true,
+  "urls": {
+    "render.mp4": "https://huggingface.co/datasets/Enderfga/SolarRenderer-Data/resolve/main/benchmark/heldout/clips/magpie/scene09_player4_039250/render.mp4",
+    "condition.mp4": "https://huggingface.co/datasets/Enderfga/SolarRenderer-Data/resolve/main/benchmark/heldout/clips/magpie/scene09_player4_039250/condition.mp4",
+    "first_frame.png": "https://huggingface.co/datasets/Enderfga/SolarRenderer-Data/resolve/main/benchmark/heldout/clips/magpie/scene09_player4_039250/first_frame.png"
+  },
+  "source_index": "https://huggingface.co/datasets/Enderfga/SolarRenderer-Data/resolve/main/benchmark/heldout/cases.jsonl",
+  "original_source_record": {
+    "clip_id": "magpie/scene09_player4_039250",
+    "condition": "scene grey box (engine white-box)",
+    "inputs": "structure + first frame + text",
+    "ground_truth": "benchmark/heldout/clips/magpie/scene09_player4_039250/render.mp4",
+    "files": {
+      "render.mp4": "benchmark/heldout/clips/magpie/scene09_player4_039250/render.mp4",
+      "condition.mp4": "benchmark/heldout/clips/magpie/scene09_player4_039250/condition.mp4",
+      "first_frame.png": "benchmark/heldout/clips/magpie/scene09_player4_039250/first_frame.png"
+    },
+    "license": "Apache-2.0, from Magpie (MogoAI/Magpie_lite)"
+  }
+}

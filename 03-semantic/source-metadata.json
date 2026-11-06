@@ -1,0 +1,31 @@
+{
+  "slug": "03-semantic",
+  "category": 3,
+  "title": "语义色块",
+  "split": "heldout",
+  "sample_id": "carla/cc000021085",
+  "upstream": "CARLA 0.9.16 引擎导出；SolarRenderer 录制",
+  "upstream_url": "https://carla.org/",
+  "dataset": "https://huggingface.co/datasets/Enderfga/SolarRenderer-Data",
+  "condition": "semantic segmentation (engine export)",
+  "primary": true,
+  "real_target": true,
+  "urls": {
+    "render.mp4": "https://huggingface.co/datasets/Enderfga/SolarRenderer-Data/resolve/main/benchmark/heldout/clips/carla/cc000021085/render.mp4",
+    "condition.mp4": "https://huggingface.co/datasets/Enderfga/SolarRenderer-Data/resolve/main/benchmark/heldout/clips/carla/cc000021085/condition.mp4",
+    "first_frame.png": "https://huggingface.co/datasets/Enderfga/SolarRenderer-Data/resolve/main/benchmark/heldout/clips/carla/cc000021085/first_frame.png"
+  },
+  "source_index": "https://huggingface.co/datasets/Enderfga/SolarRenderer-Data/resolve/main/benchmark/heldout/cases.jsonl",
+  "original_source_record": {
+    "clip_id": "carla/cc000021085",
+    "condition": "semantic segmentation (engine export)",
+    "inputs": "structure + first frame + text",
+    "ground_truth": "benchmark/heldout/clips/carla/cc000021085/render.mp4",
+    "files": {
+      "render.mp4": "benchmark/heldout/clips/carla/cc000021085/render.mp4",
+      "condition.mp4": "benchmark/heldout/clips/carla/cc000021085/condition.mp4",
+      "first_frame.png": "benchmark/heldout/clips/carla/cc000021085/first_frame.png"
+    },
+    "license": "rendered by us in CARLA 0.9.16 (code MIT, assets CC-BY); attribute CARLA"
+  }
+}

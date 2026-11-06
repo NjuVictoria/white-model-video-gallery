@@ -1,0 +1,38 @@
+{
+  "slug": "02-boxes",
+  "category": 2,
+  "title": "对象级几何替身：3D 框",
+  "split": "hard",
+  "sample_id": "mat_bbox3d__moscowsnow",
+  "upstream": "SolarRenderer 作者构建的引擎结构片段",
+  "upstream_url": null,
+  "dataset": "https://huggingface.co/datasets/Enderfga/SolarRenderer-Data",
+  "condition": "3D bounding boxes (driving format)",
+  "primary": true,
+  "real_target": false,
+  "urls": {
+    "condition.mp4": "https://huggingface.co/datasets/Enderfga/SolarRenderer-Data/resolve/main/benchmark/hard/mat_bbox3d__moscowsnow/condition.mp4",
+    "first_frame.png": "https://huggingface.co/datasets/Enderfga/SolarRenderer-Data/resolve/main/benchmark/hard/mat_bbox3d__moscowsnow/first_frame.png",
+    "prompt.txt": "https://huggingface.co/datasets/Enderfga/SolarRenderer-Data/resolve/main/benchmark/hard/mat_bbox3d__moscowsnow/prompt.txt"
+  },
+  "source_index": "https://huggingface.co/datasets/Enderfga/SolarRenderer-Data/resolve/main/benchmark/hard/cases.jsonl",
+  "original_source_record": {
+    "case_id": "mat_bbox3d__moscowsnow",
+    "segment": "mat_bbox3d",
+    "look": "moscowsnow",
+    "condition": "3D bounding boxes (driving format)",
+    "condition_origin": "built by our agent",
+    "condition_seen_in_training": false,
+    "tags": [
+      "multi-person",
+      "unseen condition"
+    ],
+    "files": {
+      "condition.mp4": "benchmark/hard/mat_bbox3d__moscowsnow/condition.mp4",
+      "first_frame.png": "benchmark/hard/mat_bbox3d__moscowsnow/first_frame.png",
+      "prompt.txt": "benchmark/hard/mat_bbox3d__moscowsnow/prompt.txt"
+    },
+    "first_frame_note": "image-model render of the condition's frame 0 in this look, not a real photo",
+    "ground_truth": null
+  }
+}

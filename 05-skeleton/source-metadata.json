@@ -1,0 +1,39 @@
+{
+  "slug": "05-skeleton",
+  "category": 5,
+  "title": "人体运动：2D 骨架",
+  "split": "hard",
+  "sample_id": "mat_pose2d__kpop",
+  "upstream": "SolarRenderer 作者构建的引擎结构片段",
+  "upstream_url": null,
+  "dataset": "https://huggingface.co/datasets/Enderfga/SolarRenderer-Data",
+  "condition": "2D pose skeleton",
+  "primary": true,
+  "real_target": false,
+  "urls": {
+    "condition.mp4": "https://huggingface.co/datasets/Enderfga/SolarRenderer-Data/resolve/main/benchmark/hard/mat_pose2d__kpop/condition.mp4",
+    "first_frame.png": "https://huggingface.co/datasets/Enderfga/SolarRenderer-Data/resolve/main/benchmark/hard/mat_pose2d__kpop/first_frame.png",
+    "prompt.txt": "https://huggingface.co/datasets/Enderfga/SolarRenderer-Data/resolve/main/benchmark/hard/mat_pose2d__kpop/prompt.txt"
+  },
+  "source_index": "https://huggingface.co/datasets/Enderfga/SolarRenderer-Data/resolve/main/benchmark/hard/cases.jsonl",
+  "original_source_record": {
+    "case_id": "mat_pose2d__kpop",
+    "segment": "mat_pose2d",
+    "look": "kpop",
+    "condition": "2D pose skeleton",
+    "condition_origin": "built by our agent",
+    "condition_seen_in_training": false,
+    "tags": [
+      "large motion",
+      "multi-person",
+      "unseen condition"
+    ],
+    "files": {
+      "condition.mp4": "benchmark/hard/mat_pose2d__kpop/condition.mp4",
+      "first_frame.png": "benchmark/hard/mat_pose2d__kpop/first_frame.png",
+      "prompt.txt": "benchmark/hard/mat_pose2d__kpop/prompt.txt"
+    },
+    "first_frame_note": "image-model render of the condition's frame 0 in this look, not a real photo",
+    "ground_truth": null
+  }
+}

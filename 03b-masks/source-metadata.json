@@ -1,0 +1,31 @@
+{
+  "slug": "03b-masks",
+  "category": 3,
+  "title": "补充：实例 mask＋骨架",
+  "split": "heldout",
+  "sample_id": "unrealzoo/uz_Arctic_s14700002_05_fps",
+  "upstream": "UnrealZoo 环境引擎导出；SolarRenderer 录制",
+  "upstream_url": "https://github.com/UnrealZoo/unrealzoo-gym",
+  "dataset": "https://huggingface.co/datasets/Enderfga/SolarRenderer-Data",
+  "condition": "object masks + character skeletons (engine export)",
+  "primary": false,
+  "real_target": true,
+  "urls": {
+    "render.mp4": "https://huggingface.co/datasets/Enderfga/SolarRenderer-Data/resolve/main/benchmark/heldout/clips/unrealzoo/uz_Arctic_s14700002_05_fps/render.mp4",
+    "condition.mp4": "https://huggingface.co/datasets/Enderfga/SolarRenderer-Data/resolve/main/benchmark/heldout/clips/unrealzoo/uz_Arctic_s14700002_05_fps/condition.mp4",
+    "first_frame.png": "https://huggingface.co/datasets/Enderfga/SolarRenderer-Data/resolve/main/benchmark/heldout/clips/unrealzoo/uz_Arctic_s14700002_05_fps/first_frame.png"
+  },
+  "source_index": "https://huggingface.co/datasets/Enderfga/SolarRenderer-Data/resolve/main/benchmark/heldout/cases.jsonl",
+  "original_source_record": {
+    "clip_id": "unrealzoo/uz_Arctic_s14700002_05_fps",
+    "condition": "object masks + character skeletons (engine export)",
+    "inputs": "structure + first frame + text",
+    "ground_truth": "benchmark/heldout/clips/unrealzoo/uz_Arctic_s14700002_05_fps/render.mp4",
+    "files": {
+      "render.mp4": "benchmark/heldout/clips/unrealzoo/uz_Arctic_s14700002_05_fps/render.mp4",
+      "condition.mp4": "benchmark/heldout/clips/unrealzoo/uz_Arctic_s14700002_05_fps/condition.mp4",
+      "first_frame.png": "benchmark/heldout/clips/unrealzoo/uz_Arctic_s14700002_05_fps/first_frame.png"
+    },
+    "license": "rendered by us in UnrealZoo environments (code Apache-2.0); research use only"
+  }
+}

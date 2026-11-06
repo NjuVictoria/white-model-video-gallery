@@ -1,0 +1,358 @@
+[
+  {
+    "slug": "01-graybox-run",
+    "category": 1,
+    "title": "场景灰模／白盒",
+    "split": "heldout",
+    "sample_id": "magpie/scene09_player4_039250",
+    "upstream": "Magpie / MogoAI/Magpie_lite；SolarRenderer 切片",
+    "upstream_url": "https://huggingface.co/datasets/MogoAI/Magpie_lite",
+    "dataset": "https://huggingface.co/datasets/Enderfga/SolarRenderer-Data",
+    "condition": "scene grey box (engine white-box)",
+    "primary": true,
+    "real_target": true,
+    "urls": {
+      "render.mp4": "https://huggingface.co/datasets/Enderfga/SolarRenderer-Data/resolve/main/benchmark/heldout/clips/magpie/scene09_player4_039250/render.mp4",
+      "condition.mp4": "https://huggingface.co/datasets/Enderfga/SolarRenderer-Data/resolve/main/benchmark/heldout/clips/magpie/scene09_player4_039250/condition.mp4",
+      "first_frame.png": "https://huggingface.co/datasets/Enderfga/SolarRenderer-Data/resolve/main/benchmark/heldout/clips/magpie/scene09_player4_039250/first_frame.png"
+    },
+    "source_index": "https://huggingface.co/datasets/Enderfga/SolarRenderer-Data/resolve/main/benchmark/heldout/cases.jsonl",
+    "original_source_record": {
+      "clip_id": "magpie/scene09_player4_039250",
+      "condition": "scene grey box (engine white-box)",
+      "inputs": "structure + first frame + text",
+      "ground_truth": "benchmark/heldout/clips/magpie/scene09_player4_039250/render.mp4",
+      "files": {
+        "render.mp4": "benchmark/heldout/clips/magpie/scene09_player4_039250/render.mp4",
+        "condition.mp4": "benchmark/heldout/clips/magpie/scene09_player4_039250/condition.mp4",
+        "first_frame.png": "benchmark/heldout/clips/magpie/scene09_player4_039250/first_frame.png"
+      },
+      "license": "Apache-2.0, from Magpie (MogoAI/Magpie_lite)"
+    }
+  },
+  {
+    "slug": "02-boxes",
+    "category": 2,
+    "title": "对象级几何替身：3D 框",
+    "split": "hard",
+    "sample_id": "mat_bbox3d__moscowsnow",
+    "upstream": "SolarRenderer 作者构建的引擎结构片段",
+    "upstream_url": null,
+    "dataset": "https://huggingface.co/datasets/Enderfga/SolarRenderer-Data",
+    "condition": "3D bounding boxes (driving format)",
+    "primary": true,
+    "real_target": false,
+    "urls": {
+      "condition.mp4": "https://huggingface.co/datasets/Enderfga/SolarRenderer-Data/resolve/main/benchmark/hard/mat_bbox3d__moscowsnow/condition.mp4",
+      "first_frame.png": "https://huggingface.co/datasets/Enderfga/SolarRenderer-Data/resolve/main/benchmark/hard/mat_bbox3d__moscowsnow/first_frame.png",
+      "prompt.txt": "https://huggingface.co/datasets/Enderfga/SolarRenderer-Data/resolve/main/benchmark/hard/mat_bbox3d__moscowsnow/prompt.txt"
+    },
+    "source_index": "https://huggingface.co/datasets/Enderfga/SolarRenderer-Data/resolve/main/benchmark/hard/cases.jsonl",
+    "original_source_record": {
+      "case_id": "mat_bbox3d__moscowsnow",
+      "segment": "mat_bbox3d",
+      "look": "moscowsnow",
+      "condition": "3D bounding boxes (driving format)",
+      "condition_origin": "built by our agent",
+      "condition_seen_in_training": false,
+      "tags": [
+        "multi-person",
+        "unseen condition"
+      ],
+      "files": {
+        "condition.mp4": "benchmark/hard/mat_bbox3d__moscowsnow/condition.mp4",
+        "first_frame.png": "benchmark/hard/mat_bbox3d__moscowsnow/first_frame.png",
+        "prompt.txt": "benchmark/hard/mat_bbox3d__moscowsnow/prompt.txt"
+      },
+      "first_frame_note": "image-model render of the condition's frame 0 in this look, not a real photo",
+      "ground_truth": null
+    }
+  },
+  {
+    "slug": "03-semantic",
+    "category": 3,
+    "title": "语义色块",
+    "split": "heldout",
+    "sample_id": "carla/cc000021085",
+    "upstream": "CARLA 0.9.16 引擎导出；SolarRenderer 录制",
+    "upstream_url": "https://carla.org/",
+    "dataset": "https://huggingface.co/datasets/Enderfga/SolarRenderer-Data",
+    "condition": "semantic segmentation (engine export)",
+    "primary": true,
+    "real_target": true,
+    "urls": {
+      "render.mp4": "https://huggingface.co/datasets/Enderfga/SolarRenderer-Data/resolve/main/benchmark/heldout/clips/carla/cc000021085/render.mp4",
+      "condition.mp4": "https://huggingface.co/datasets/Enderfga/SolarRenderer-Data/resolve/main/benchmark/heldout/clips/carla/cc000021085/condition.mp4",
+      "first_frame.png": "https://huggingface.co/datasets/Enderfga/SolarRenderer-Data/resolve/main/benchmark/heldout/clips/carla/cc000021085/first_frame.png"
+    },
+    "source_index": "https://huggingface.co/datasets/Enderfga/SolarRenderer-Data/resolve/main/benchmark/heldout/cases.jsonl",
+    "original_source_record": {
+      "clip_id": "carla/cc000021085",
+      "condition": "semantic segmentation (engine export)",
+      "inputs": "structure + first frame + text",
+      "ground_truth": "benchmark/heldout/clips/carla/cc000021085/render.mp4",
+      "files": {
+        "render.mp4": "benchmark/heldout/clips/carla/cc000021085/render.mp4",
+        "condition.mp4": "benchmark/heldout/clips/carla/cc000021085/condition.mp4",
+        "first_frame.png": "benchmark/heldout/clips/carla/cc000021085/first_frame.png"
+      },
+      "license": "rendered by us in CARLA 0.9.16 (code MIT, assets CC-BY); attribute CARLA"
+    }
+  },
+  {
+    "slug": "04-depth",
+    "category": 4,
+    "title": "几何缓冲：近场深度灰显",
+    "split": "heldout",
+    "sample_id": "game/clip04",
+    "upstream": "SolarRenderer 的 game 引擎录制；源游戏/完整采集集未具名公开",
+    "upstream_url": null,
+    "dataset": "https://huggingface.co/datasets/Enderfga/SolarRenderer-Data",
+    "condition": "near-field shaded geometry (depth within 30 m)",
+    "primary": true,
+    "real_target": true,
+    "urls": {
+      "render.mp4": "https://huggingface.co/datasets/Enderfga/SolarRenderer-Data/resolve/main/benchmark/heldout/clips/game/clip04/render.mp4",
+      "condition.mp4": "https://huggingface.co/datasets/Enderfga/SolarRenderer-Data/resolve/main/benchmark/heldout/clips/game/clip04/condition.mp4",
+      "first_frame.png": "https://huggingface.co/datasets/Enderfga/SolarRenderer-Data/resolve/main/benchmark/heldout/clips/game/clip04/first_frame.png"
+    },
+    "source_index": "https://huggingface.co/datasets/Enderfga/SolarRenderer-Data/resolve/main/benchmark/heldout/cases.jsonl",
+    "original_source_record": {
+      "clip_id": "game/clip04",
+      "condition": "near-field shaded geometry (depth within 30 m)",
+      "inputs": "structure + first frame + text",
+      "ground_truth": "benchmark/heldout/clips/game/clip04/render.mp4",
+      "files": {
+        "render.mp4": "benchmark/heldout/clips/game/clip04/render.mp4",
+        "condition.mp4": "benchmark/heldout/clips/game/clip04/condition.mp4",
+        "first_frame.png": "benchmark/heldout/clips/game/clip04/first_frame.png"
+      },
+      "license": "research use only"
+    }
+  },
+  {
+    "slug": "05-skeleton",
+    "category": 5,
+    "title": "人体运动：2D 骨架",
+    "split": "hard",
+    "sample_id": "mat_pose2d__kpop",
+    "upstream": "SolarRenderer 作者构建的引擎结构片段",
+    "upstream_url": null,
+    "dataset": "https://huggingface.co/datasets/Enderfga/SolarRenderer-Data",
+    "condition": "2D pose skeleton",
+    "primary": true,
+    "real_target": false,
+    "urls": {
+      "condition.mp4": "https://huggingface.co/datasets/Enderfga/SolarRenderer-Data/resolve/main/benchmark/hard/mat_pose2d__kpop/condition.mp4",
+      "first_frame.png": "https://huggingface.co/datasets/Enderfga/SolarRenderer-Data/resolve/main/benchmark/hard/mat_pose2d__kpop/first_frame.png",
+      "prompt.txt": "https://huggingface.co/datasets/Enderfga/SolarRenderer-Data/resolve/main/benchmark/hard/mat_pose2d__kpop/prompt.txt"
+    },
+    "source_index": "https://huggingface.co/datasets/Enderfga/SolarRenderer-Data/resolve/main/benchmark/hard/cases.jsonl",
+    "original_source_record": {
+      "case_id": "mat_pose2d__kpop",
+      "segment": "mat_pose2d",
+      "look": "kpop",
+      "condition": "2D pose skeleton",
+      "condition_origin": "built by our agent",
+      "condition_seen_in_training": false,
+      "tags": [
+        "large motion",
+        "multi-person",
+        "unseen condition"
+      ],
+      "files": {
+        "condition.mp4": "benchmark/hard/mat_pose2d__kpop/condition.mp4",
+        "first_frame.png": "benchmark/hard/mat_pose2d__kpop/first_frame.png",
+        "prompt.txt": "benchmark/hard/mat_pose2d__kpop/prompt.txt"
+      },
+      "first_frame_note": "image-model render of the condition's frame 0 in this look, not a real photo",
+      "ground_truth": null
+    }
+  },
+  {
+    "slug": "06-pointcloud",
+    "category": 6,
+    "title": "稀疏三维：点云",
+    "split": "hard",
+    "sample_id": "mat_pointcloud__indiana",
+    "upstream": "SolarRenderer 作者构建的引擎结构片段",
+    "upstream_url": null,
+    "dataset": "https://huggingface.co/datasets/Enderfga/SolarRenderer-Data",
+    "condition": "point cloud",
+    "primary": true,
+    "real_target": false,
+    "urls": {
+      "condition.mp4": "https://huggingface.co/datasets/Enderfga/SolarRenderer-Data/resolve/main/benchmark/hard/mat_pointcloud__indiana/condition.mp4",
+      "first_frame.png": "https://huggingface.co/datasets/Enderfga/SolarRenderer-Data/resolve/main/benchmark/hard/mat_pointcloud__indiana/first_frame.png",
+      "prompt.txt": "https://huggingface.co/datasets/Enderfga/SolarRenderer-Data/resolve/main/benchmark/hard/mat_pointcloud__indiana/prompt.txt"
+    },
+    "source_index": "https://huggingface.co/datasets/Enderfga/SolarRenderer-Data/resolve/main/benchmark/hard/cases.jsonl",
+    "original_source_record": {
+      "case_id": "mat_pointcloud__indiana",
+      "segment": "mat_pointcloud",
+      "look": "indiana",
+      "condition": "point cloud",
+      "condition_origin": "built by our agent",
+      "condition_seen_in_training": false,
+      "tags": [
+        "night",
+        "unseen condition"
+      ],
+      "files": {
+        "condition.mp4": "benchmark/hard/mat_pointcloud__indiana/condition.mp4",
+        "first_frame.png": "benchmark/hard/mat_pointcloud__indiana/first_frame.png",
+        "prompt.txt": "benchmark/hard/mat_pointcloud__indiana/prompt.txt"
+      },
+      "first_frame_note": "image-model render of the condition's frame 0 in this look, not a real photo",
+      "ground_truth": null
+    }
+  },
+  {
+    "slug": "07-sketch",
+    "category": 7,
+    "title": "二维草图：铅笔分镜",
+    "split": "hard",
+    "sample_id": "mat_sketch__pixelart",
+    "upstream": "SolarRenderer 作者构建的引擎结构片段",
+    "upstream_url": null,
+    "dataset": "https://huggingface.co/datasets/Enderfga/SolarRenderer-Data",
+    "condition": "pencil storyboard",
+    "primary": true,
+    "real_target": false,
+    "urls": {
+      "condition.mp4": "https://huggingface.co/datasets/Enderfga/SolarRenderer-Data/resolve/main/benchmark/hard/mat_sketch__pixelart/condition.mp4",
+      "first_frame.png": "https://huggingface.co/datasets/Enderfga/SolarRenderer-Data/resolve/main/benchmark/hard/mat_sketch__pixelart/first_frame.png",
+      "prompt.txt": "https://huggingface.co/datasets/Enderfga/SolarRenderer-Data/resolve/main/benchmark/hard/mat_sketch__pixelart/prompt.txt"
+    },
+    "source_index": "https://huggingface.co/datasets/Enderfga/SolarRenderer-Data/resolve/main/benchmark/hard/cases.jsonl",
+    "original_source_record": {
+      "case_id": "mat_sketch__pixelart",
+      "segment": "mat_sketch",
+      "look": "pixelart",
+      "condition": "pencil storyboard",
+      "condition_origin": "built by our agent",
+      "condition_seen_in_training": false,
+      "tags": [
+        "fast camera",
+        "stylized",
+        "night",
+        "unseen condition"
+      ],
+      "files": {
+        "condition.mp4": "benchmark/hard/mat_sketch__pixelart/condition.mp4",
+        "first_frame.png": "benchmark/hard/mat_sketch__pixelart/first_frame.png",
+        "prompt.txt": "benchmark/hard/mat_sketch__pixelart/prompt.txt"
+      },
+      "first_frame_note": "image-model render of the condition's frame 0 in this look, not a real photo",
+      "ground_truth": null
+    }
+  },
+  {
+    "slug": "05b-smpl",
+    "category": 5,
+    "title": "补充：SMPL 人体网格",
+    "split": "hard",
+    "sample_id": "smpl-trailer-combo__knight",
+    "upstream": "拟合 SMPL 运动，白底渲染；具体原视频由该条元数据未注明",
+    "upstream_url": null,
+    "dataset": "https://huggingface.co/datasets/Enderfga/SolarRenderer-Data",
+    "condition": "SMPL body mesh",
+    "primary": false,
+    "real_target": false,
+    "urls": {
+      "condition.mp4": "https://huggingface.co/datasets/Enderfga/SolarRenderer-Data/resolve/main/benchmark/hard/smpl-trailer-combo__knight/condition.mp4",
+      "first_frame.png": "https://huggingface.co/datasets/Enderfga/SolarRenderer-Data/resolve/main/benchmark/hard/smpl-trailer-combo__knight/first_frame.png",
+      "prompt.txt": "https://huggingface.co/datasets/Enderfga/SolarRenderer-Data/resolve/main/benchmark/hard/smpl-trailer-combo__knight/prompt.txt"
+    },
+    "source_index": "https://huggingface.co/datasets/Enderfga/SolarRenderer-Data/resolve/main/benchmark/hard/cases.jsonl",
+    "original_source_record": {
+      "case_id": "smpl-trailer-combo__knight",
+      "segment": "smpl-trailer-combo",
+      "look": "knight",
+      "condition": "SMPL body mesh",
+      "condition_origin": "fitted SMPL motion, white background",
+      "condition_seen_in_training": true,
+      "tags": [
+        "large motion",
+        "night"
+      ],
+      "files": {
+        "condition.mp4": "benchmark/hard/smpl-trailer-combo__knight/condition.mp4",
+        "first_frame.png": "benchmark/hard/smpl-trailer-combo__knight/first_frame.png",
+        "prompt.txt": "benchmark/hard/smpl-trailer-combo__knight/prompt.txt"
+      },
+      "first_frame_note": "image-model render of the condition's frame 0 in this look, not a real photo",
+      "ground_truth": null
+    }
+  },
+  {
+    "slug": "06b-voxel",
+    "category": 6,
+    "title": "补充：体素",
+    "split": "hard",
+    "sample_id": "mat_voxel__westeros",
+    "upstream": "SolarRenderer 作者构建的引擎结构片段",
+    "upstream_url": null,
+    "dataset": "https://huggingface.co/datasets/Enderfga/SolarRenderer-Data",
+    "condition": "voxels",
+    "primary": false,
+    "real_target": false,
+    "urls": {
+      "condition.mp4": "https://huggingface.co/datasets/Enderfga/SolarRenderer-Data/resolve/main/benchmark/hard/mat_voxel__westeros/condition.mp4",
+      "first_frame.png": "https://huggingface.co/datasets/Enderfga/SolarRenderer-Data/resolve/main/benchmark/hard/mat_voxel__westeros/first_frame.png",
+      "prompt.txt": "https://huggingface.co/datasets/Enderfga/SolarRenderer-Data/resolve/main/benchmark/hard/mat_voxel__westeros/prompt.txt"
+    },
+    "source_index": "https://huggingface.co/datasets/Enderfga/SolarRenderer-Data/resolve/main/benchmark/hard/cases.jsonl",
+    "original_source_record": {
+      "case_id": "mat_voxel__westeros",
+      "segment": "mat_voxel",
+      "look": "westeros",
+      "condition": "voxels",
+      "condition_origin": "built by our agent",
+      "condition_seen_in_training": false,
+      "tags": [
+        "large motion",
+        "fast camera",
+        "unseen condition"
+      ],
+      "files": {
+        "condition.mp4": "benchmark/hard/mat_voxel__westeros/condition.mp4",
+        "first_frame.png": "benchmark/hard/mat_voxel__westeros/first_frame.png",
+        "prompt.txt": "benchmark/hard/mat_voxel__westeros/prompt.txt"
+      },
+      "first_frame_note": "image-model render of the condition's frame 0 in this look, not a real photo",
+      "ground_truth": null
+    }
+  },
+  {
+    "slug": "03b-masks",
+    "category": 3,
+    "title": "补充：实例 mask＋骨架",
+    "split": "heldout",
+    "sample_id": "unrealzoo/uz_Arctic_s14700002_05_fps",
+    "upstream": "UnrealZoo 环境引擎导出；SolarRenderer 录制",
+    "upstream_url": "https://github.com/UnrealZoo/unrealzoo-gym",
+    "dataset": "https://huggingface.co/datasets/Enderfga/SolarRenderer-Data",
+    "condition": "object masks + character skeletons (engine export)",
+    "primary": false,
+    "real_target": true,
+    "urls": {
+      "render.mp4": "https://huggingface.co/datasets/Enderfga/SolarRenderer-Data/resolve/main/benchmark/heldout/clips/unrealzoo/uz_Arctic_s14700002_05_fps/render.mp4",
+      "condition.mp4": "https://huggingface.co/datasets/Enderfga/SolarRenderer-Data/resolve/main/benchmark/heldout/clips/unrealzoo/uz_Arctic_s14700002_05_fps/condition.mp4",
+      "first_frame.png": "https://huggingface.co/datasets/Enderfga/SolarRenderer-Data/resolve/main/benchmark/heldout/clips/unrealzoo/uz_Arctic_s14700002_05_fps/first_frame.png"
+    },
+    "source_index": "https://huggingface.co/datasets/Enderfga/SolarRenderer-Data/resolve/main/benchmark/heldout/cases.jsonl",
+    "original_source_record": {
+      "clip_id": "unrealzoo/uz_Arctic_s14700002_05_fps",
+      "condition": "object masks + character skeletons (engine export)",
+      "inputs": "structure + first frame + text",
+      "ground_truth": "benchmark/heldout/clips/unrealzoo/uz_Arctic_s14700002_05_fps/render.mp4",
+      "files": {
+        "render.mp4": "benchmark/heldout/clips/unrealzoo/uz_Arctic_s14700002_05_fps/render.mp4",
+        "condition.mp4": "benchmark/heldout/clips/unrealzoo/uz_Arctic_s14700002_05_fps/condition.mp4",
+        "first_frame.png": "benchmark/heldout/clips/unrealzoo/uz_Arctic_s14700002_05_fps/first_frame.png"
+      },
+      "license": "rendered by us in UnrealZoo environments (code Apache-2.0); research use only"
+    }
+  }
+]

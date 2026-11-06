@@ -1,0 +1,31 @@
+{
+  "slug": "04-depth",
+  "category": 4,
+  "title": "几何缓冲：近场深度灰显",
+  "split": "heldout",
+  "sample_id": "game/clip04",
+  "upstream": "SolarRenderer 的 game 引擎录制；源游戏/完整采集集未具名公开",
+  "upstream_url": null,
+  "dataset": "https://huggingface.co/datasets/Enderfga/SolarRenderer-Data",
+  "condition": "near-field shaded geometry (depth within 30 m)",
+  "primary": true,
+  "real_target": true,
+  "urls": {
+    "render.mp4": "https://huggingface.co/datasets/Enderfga/SolarRenderer-Data/resolve/main/benchmark/heldout/clips/game/clip04/render.mp4",
+    "condition.mp4": "https://huggingface.co/datasets/Enderfga/SolarRenderer-Data/resolve/main/benchmark/heldout/clips/game/clip04/condition.mp4",
+    "first_frame.png": "https://huggingface.co/datasets/Enderfga/SolarRenderer-Data/resolve/main/benchmark/heldout/clips/game/clip04/first_frame.png"
+  },
+  "source_index": "https://huggingface.co/datasets/Enderfga/SolarRenderer-Data/resolve/main/benchmark/heldout/cases.jsonl",
+  "original_source_record": {
+    "clip_id": "game/clip04",
+    "condition": "near-field shaded geometry (depth within 30 m)",
+    "inputs": "structure + first frame + text",
+    "ground_truth": "benchmark/heldout/clips/game/clip04/render.mp4",
+    "files": {
+      "render.mp4": "benchmark/heldout/clips/game/clip04/render.mp4",
+      "condition.mp4": "benchmark/heldout/clips/game/clip04/condition.mp4",
+      "first_frame.png": "benchmark/heldout/clips/game/clip04/first_frame.png"
+    },
+    "license": "research use only"
+  }
+}
